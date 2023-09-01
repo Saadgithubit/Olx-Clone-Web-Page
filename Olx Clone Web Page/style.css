@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* ..................................Header.......................................... */
+body{
+    width: 100%;
+}
+.header-top{
+    display: flex;
+    padding: 20px;
+    padding-left: 0 0 0 20px;
+    word-spacing: 5px;
+    background-color: #f7f8f8;
+    width: 100%;
+}
+
+.fa-car , .fa-building{
+    font-size: 15px;
+    background-color: white;
+    color: black;
+    margin-left: 30px;
+}
+.header-a> a , .header-a2 > a{
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+}
+
+.header{
+    display: flex;
+    justify-content: space-evenly;
+    height: 80px;
+    padding-top: 0 0 0 20px;
+    background-color: #f7f8f8;
+    width: 100%;
+    
+}
+
+#inp{
+    width: 50vh;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 30px;
+    border-radius: 5px;
+}
+.icon{
+    position: relative;
+    top: -38px;
+    left: 10px;
+}
+.fa-magnifying-glass{
+    width: 20px;
+    height: 20px;
+    
+}
+#input{
+    width: 90vh;
+    height: 50px;
+    border: 2px solid black;
+    padding-left: 20px;
+    border-radius: 5px;
+}
+.icon-2{
+    position: relative;
+    top: -49px;
+    left: 481px;
+}
+.search-bar{
+    width: 50px;
+    height: 50px;
+    
+}
+.Login{
+    border: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    margin-top: 10px;
+}
+.sell{
+    width: 110px;
+    height: 50px;
+    border: 5px solid black;
+    border-radius: 20px;
+    border-top-color: aqua;
+    border-right-color: yellow;
+    border-left-color: blue;
+}
+
+/* ......................................Nav-Bar........................................ */
+.navbar> ul{
+    display: flex;
+}
+ul> li{
+    list-style: none;
+    margin: 15px;
+}
+ul> li:hover{
+    color: skyblue;
+    cursor: pointer;
+}
+
+.select{
+    border: none;
+    font-weight: bold;
+
+}
+ .capture-2{
+    text-align: center;
+ }
+ /* .............................................products................................... */
+ .h3{
+    margin-left: 30px;
+ }
+ .items{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px ;
+    padding-left: 40px;
+ }
+ .same{
+    text-align: center;
+ }
+
+ .img{
+    width: 100px;
+   margin: 20px;
+ }
+ p{
+   font-weight: bold;
+   width: 100px;
+ }
+ /* .........................................Cards............................................... */
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px 0 20px;
+}
+
+.card{
+    
+    width: 300px !important;
+    margin: 10px;
+}
+
+ .para{
+    width: 250px !important;
+    font-weight: 100; 
+ }
+ .heading{
+    margin-left: 30px;
+    display: flex;
+ }
+.link{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 50px;
+}
+
+ /* ................................................Footer.......................................... */
+.footer{
+    display: flex;
+    justify-content: space-around;
+    border: 1px solid lightgray;
+    height: 200px;
+    background-color: rgb(233, 231, 231);
+}
+ .footer-li-heading> h3{
+    font-size: 18px !important;
+    margin-left: -15px;
+ }
+
+ .footer-li{
+    font-size: 13px !important;
+    margin: 2px;
+ }
+ .follow{
+    font-size: 16px;
+    margin-top: 13px;
+ }
+
+ .end{
+    border: 1px solid lightgrey;
+    height: 50px;
+    background-color: hsla(203, 73%, 14%, 0.796);
+    display: flex;
+    justify-content: flex-end;
+    color: white;
+ }
+
+ .last-para{
+    margin-top: 10px;
+    font-size: 15px;
+    width: 350px;
+ }
+
+ .acc{
+    display: none;
+ }
+/* .......................................Media Queries ......................................................*/
+
+
+
+ @media only screen and (max-width: 768px){
+    *{
+        margin: 0;
+        padding: 0;
+    }   
+      body{
+        width: auto;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    
+    .header-top{
+        width: 100% ;
+        display: flex;
+        justify-content: flex-start;
+    }
+  
+        .hidden , #inp , .Login , .icon-2, .sell, .ul , ul>li{
+        display: none;
+        }
+        .header{
+            width: 100%;
+        }
+     #input{
+        display: inline-block;
+        width: 768px;
+        height: 70px;
+        font-size: 20px;
+        padding-left: 100px;
+        border-radius: 10px;
+        margin-left: -50px;
+     }
+     .fa-magnifying-glass{
+        width: 50px;
+        height: 50px;
+        position: relative;
+        top: 48px;
+        left: 10px;
+     }
+    .capture> img{
+        width: 100%;
+        height: 200px;
+    }
+    .capture-2{
+        display: none;
+    }
+    
+    .h3> h3{
+     
+        font-size: 70px;
+        width: 500px;
+    }
+    
+    .items{
+       
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+        padding: 0;
+
+     }
+     .same{
+        height: 200px;
+     }
+     .same > img , p{
+        width: 50px !important;
+        height: 50px !important;
+     }
+     .heading , .heading > h3{
+        width: 50%;
+        display: block;
+        width: 700px !important;
+        font-size: 70px;
+     }
+     h3{
+        width: 300px;
+     }
+     .main{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        
+     }
+     .card{
+        width: 300px !important;
+        margin: 10px;
+        
+    }
+    .card > img{
+        
+        height: 200px !important;
+        width: 300px;
+    }
+    .capture-2 , .capture-3{
+        display: none;
+    }
+    
+    .footer{
+        display: none;
+    }
+    .acc{
+        display: block;
+        width: 100% ;
+    }
+ 
+    .accordion-button{
+        font-size: 20px !important;
+        padding-left: 30px !important;
+        height: 100px !important;
+        border-top: 1px solid gray !important;
+        border-bottom: 1px solid gray !important;
+    }
+    .end{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        justify-content: flex-start
+    }
+    .last-para{
+        font-size: 20px;
+        width: 100% !important;
+        text-align: center;
+        margin-top: 30px;
+        
+    }
+    .follow-us{
+        display: flex;
+        height: 100px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .follow{
+        font-size: 20px;
+        margin-left: 20px;
+        margin-top: 40px;
+    }
+    .follow-us> img{
+        width: 50px !important;
+        height: 50px;
+        margin: 20px;
+        position: relative;
+        left: 40px;
+        margin-top: 30px;
+    }
+
+    .last-button{
+        height: 200px;
+        text-align: center;
+    }
+    .last-button>img{
+        width: 200px;
+        height: 150px;
+    }
+ }
+ @media only screen and (max-width: 320px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header-top{
+        margin: 0;
+        width: 100% !important;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header-a > a , .header-a2 > a , .header-img > a{
+        font-size: 10px;
+    }
+
+        .hidden , #inp , .Login , .icon-2, .ul , ul>li{
+        display: none;
+        }
+        .header{
+            width: 100%;
+        }
+     #input{
+        width: 100%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: auto;
+     }
+     .fa-magnifying-glass{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 47px;
+        left: 30px;
+     }
+    .capture> img{
+        width: 85%;
+        height: 250px;
+    }
+    .capture-2{
+        display: none;
+    }
+    
+    .h3> h3{
+      margin-left: 10px;
+        font-size: 30px;
+        width: 500px;
+    }
+    
+    .items{
+       
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    
+     }
+     .same{
+        height: 150px;
+     }
+     .same > img {
+        width: 30px !important;
+        height: 30px !important;
+     }
+     .same > p{
+        font-size: 10px;
+     }
+     .heading , .heading > h3{
+        width: 50%;
+        display: block;
+        font-size: 30px;
+     }
+     h3{
+        font-size: 15px;
+        width: 300px;
+     }
+     .main{
+        padding: 10px 20px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+     .card{
+       margin: 0;
+       margin-left: 0;
+       width: 250px !important;
+       height: 200px !important;
+     }
+   
+    .card > img{
+        
+        height: 100px !important;
+        width: 100%;
+    }
+    .card-body > p{
+        font-size: 10px !important;
+        margin: 0;
+        width: 100px;
+    }
+    .capture-2 , .capture-3{
+        display: none;
+    }
+    
+    .footer{
+        display: none;
+    }
+    .acc{
+        display: block;
+        width: 90% !important;
+        margin: 0;
+
+    }
+    .accordion-header{
+        margin: 0;
+        width: 85%;
+    }
+ .ul-1{
+    display: block;
+ }
+    .accordion-button{
+        margin: 0;
+        font-size: 14px !important;
+        padding-left: 20px !important;
+        height: 50px !important;
+        border-top: 1px solid gray !important;
+        border-bottom: 1px solid gray !important;
+    }
+    .end{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .last-para{
+        font-size: 14px;
+        text-align: center ;
+    }
+    .follow-us{
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .follow{
+        font-size: 14px;
+        margin: 15px;
+    }
+    .follow-us> img{
+        width: 20px !important;
+        height: 30px;
+        margin-top: 5px;
+        position: relative;
+        left: -60px;
+        margin: 10px;
+    }
+
+    .last-button{
+        height: 85px;
+        text-align: center;
+    }
+    .last-button>img{
+        width: 80px;
+        height: 120px;
+    }
+ }
+
+ @media only screen and (max-width: 425px){
+
+    *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+
+    }
+    body{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .header-top{
+        width: 90% !important;
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .header-a > a , .header-a2 > a , .header-img > a{
+        font-size: 10px;
+    }
+
+        .hidden , #inp , .Login , .icon-2, .ul , ul>li{
+        display: none;
+        }
+        .header{
+            width: 90%;
+        }
+     #input{
+        width: 85%;
+        height: 50px;
+        font-size: 20px;
+        border-radius: 10px;
+        margin: auto;
+     }
+     .fa-magnifying-glass{
+        width: 30px;
+        height: 30px;
+        position: relative;
+        top: 47px;
+        left: 30px;
+     }
+    .capture> img{
+        width: 85%;
+        height: 250px;
+    }
+    .capture-2{
+        display: none;
+    }
+    
+    .h3> h3{
+      margin-left: 10px;
+        font-size: 30px;
+        width: 500px;
+    }
+    
+    .items{
+       
+        display: flex;
+        flex-wrap: nowrap;
+        overflow-y: scroll;
+    
+     }
+     .same{
+        height: 150px;
+     }
+     .same > img {
+        width: 30px !important;
+        height: 30px !important;
+     }
+     .same > p{
+        font-size: 10px;
+     }
+     .heading , .heading > h3{
+        width: 50%;
+        display: block;
+        font-size: 30px;
+     }
+     h3{
+        font-size: 15px;
+        width: 300px;
+     }
+     .main{
+        padding: 10px 20px 0 20px;
+        display: flex;
+        flex-wrap: wrap;
+        
+     }
+     .card{
+       margin: 0;
+       margin-left: 0;
+       width: 250px !important;
+       height: 200px !important;
+     }
+   
+    .card > img{
+        
+        height: 100px !important;
+        width: 100%;
+    }
+    .card-body > p{
+        font-size: 10px !important;
+        margin: 0;
+        width: 100px;
+    }
+    .capture-2 , .capture-3{
+        display: none;
+    }
+    
+    .footer{
+        display: none;
+    }
+    .acc{
+        display: block;
+        width: 90% !important;
+        margin: 0;
+
+    }
+    .accordion-header{
+        margin: 0;
+        width: 85%;
+    }
+ .ul-1{
+    display: block;
+ }
+    .accordion-button{
+        margin: 0;
+        font-size: 14px !important;
+        padding-left: 20px !important;
+        height: 50px !important;
+        border-top: 1px solid gray !important;
+        border-bottom: 1px solid gray !important;
+    }
+    .end{
+        width: 90%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .last-para{
+        font-size: 14px;
+        text-align: center ;
+    }
+    .follow-us{
+        width: 85%;
+        display: flex;
+        justify-content: space-around;
+        height: 50px;
+        border-top: 1px solid gray;
+        border-bottom: 1px solid gray;
+    }
+    .follow{
+        font-size: 14px;
+        margin: 15px;
+    }
+    .follow-us> img{
+        width: 20px !important;
+        height: 30px;
+        margin-top: 5px;
+        position: relative;
+        left: -60px;
+        margin: 10px;
+    }
+
+    .last-button{
+        height: 85px;
+        text-align: center;
+    }
+    .last-button>img{
+        width: 80px;
+        height: 120px;
+    }
+ }
