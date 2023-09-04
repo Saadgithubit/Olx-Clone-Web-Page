@@ -222,12 +222,10 @@ ul> li:hover{
     }
     .hamb{
         display: block !important;
-        position: absolute;
-        top: 55px;
+        position: absolute !important;
+        top: 10px;
         left: 20px;
-        
     }
-  
         .hidden , #inp , .Login , .icon-2, .sell, .ul , ul>li{
         display: none;
         }
@@ -387,10 +385,9 @@ ul> li:hover{
   }
   .hamb{
     display: block !important;
-    position: absolute;
-    top: 55px;
+    position: absolute !important;
+    top: 10px;
     left: 20px;
-    
 }
 
       .hidden , #inp , .Login , .icon-2, .sell, .ul , ul>li{
@@ -551,9 +548,8 @@ ul> li:hover{
   .hamb{
     display: block !important;
     position: absolute !important;
-    top: 50px;
-    left: 20px;
-    
+    top: 10px;
+    left: 0;
 }
 
 
