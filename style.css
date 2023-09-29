@@ -34,9 +34,9 @@
 
 .header{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-around;
     height: 80px;
-    padding-top: 0 0 0 20px;
+    padding: 0 0 0 10px;
     background-color: #f7f8f8;
     width: 100%;
     
@@ -69,7 +69,7 @@
 .icon-2{
     position: relative;
     top: -49px;
-    left: 481px;
+    left: 534px;
 }
 .search-bar{
     width: 50px;
@@ -207,7 +207,36 @@ ul> li:hover{
  }
 /* .......................................Media Queries ......................................................*/
 
+@media only screen and (max-width: 1024px){
+    body{
+        width: 100%;
+    }
 
+    .header{
+        display: flex !important;
+        width: 100%;
+        padding: 0;
+    }
+  
+    #inp{
+        width: 250px;
+    }
+    #input{
+        width: 450px;
+    }
+    .icon-2{
+        position: relative;
+        top: -49px;
+        left: 400px;
+    }
+    
+    .card{
+    
+        width: 250px !important;
+        margin: 0;
+    }
+   
+}
 
 @media only screen and (min-width: 420px) and (max-width: 768px) {
 
