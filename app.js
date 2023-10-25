@@ -1,3 +1,4 @@
+
 const firebaseConfig = {
     apiKey: "AIzaSyDlg5H8sdJ0vn-NGrv9nG11iGYdZTlcyjE",
     authDomain: "olx-clone-9dbf6.firebaseapp.com",
@@ -13,12 +14,15 @@ const firebaseConfig = {
  
   console.log(frb.auth)
 
+  // start()
 
+  // stop(start())
 
 
   function signUp(){
       var email =document.getElementById('email').value
       var password =document.getElementById('password').value
+      window.location = './signin.html'
 
       firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
@@ -36,7 +40,7 @@ const firebaseConfig = {
 function signIn(){
     var email =document.getElementById('logInEmail').value
       var password =document.getElementById('logInPassword').value
-
+  window.location = './index.html'
       firebase.auth().signInWithEmailAndPassword(email, password)
   .then((userCredential) => {
 
@@ -48,4 +52,9 @@ function signIn(){
     var errorMessage = error.message;
     console.log(errorMessage)
   });
+}
+
+
+function start(){
+ return window.location.href = './signup.html'
 }
