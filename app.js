@@ -22,13 +22,18 @@ const firebaseConfig = {
   function signUp(){
       var email =document.getElementById('email').value
       var password =document.getElementById('password').value
-      window.location = './signin.html'
+     
 
       firebase.auth().createUserWithEmailAndPassword(email, password)
   .then((userCredential) => {
 
     var user = userCredential.user;
-    console.log(user)
+    if(user){
+      window.location = './signin.html'
+    }
+    else{
+      alert('Please fill All Fields')
+    }
   })
   .catch((error) => {
     var errorCode = error.code;
