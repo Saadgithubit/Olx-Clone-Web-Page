@@ -1,4 +1,4 @@
-const users = JSON.parse(localStorage.getItem('users')) || []
+const usersData = JSON.parse(localStorage.getItem('users')) || []
 
 
 function signUp(){
@@ -37,13 +37,13 @@ function signUp(){
         password: password.value
     }
 
-  users.push(user)
+  usersData.push(user)
 
-    localStorage.setItem('users' , JSON.stringify(user))
+    localStorage.setItem('users' , JSON.stringify(usersData))
 
 
 
-    // window.location.href = 'signin.html'
+     window.location.href = 'signin.html'
 //   console.log(name , fatherName , email , password , confirmPassword)
 
 
