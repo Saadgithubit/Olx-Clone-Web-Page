@@ -4,7 +4,7 @@ function signIn(){
     const email = inputField[0]
     const password = inputField[1]
     
-    const users = JSON.parse(localStorage.getItem('users'))
+    const usersData = JSON.parse(localStorage.getItem('users'))
     
     
 
