@@ -118,18 +118,21 @@ fieldset{
     height: 50px;
     
 }
-.Login{
-    border: none;
+
+.btn-div{
+  border:  1px solid black;
+}
+
+.btn-light{
+
+    border: 1px solid black ;
     font-size: 20px;
     font-weight: bold;
     background-color: white;
-    margin-top: 10px;
     cursor: pointer;
 }
 
-.Login:hover{
-    color: skyblue;
-}
+
 
 
 
@@ -142,6 +145,8 @@ fieldset{
     border-right-color: yellow;
     border-left-color: blue;
 }
+
+
 
 /* ......................................Nav-Bar........................................ */
 .navbar> ul{
@@ -165,6 +170,23 @@ ul> li:hover{
     text-align: center;
  }
  /* .............................................products................................... */
+ #allProducts{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 40px;
+    padding: 20px;    
+ }
+ 
+ .card-div{
+    width: 300px;
+    height: auto;
+ }
+
+ .card-div img{
+    width: 80%;
+    height: 150px;
+ }
+
  .h3{
     margin-left: 30px;
  }
@@ -194,7 +216,7 @@ ul> li:hover{
     justify-content: space-between;
     padding: 10px 20px 0 20px;
 }
-
+/* 
 .card{
     
     width: 300px !important;
@@ -204,7 +226,7 @@ ul> li:hover{
  .para{
     width: 250px !important;
     font-weight: 100; 
- }
+ } */
  .heading{
     margin-left: 30px;
     display: flex;
@@ -265,7 +287,7 @@ ul> li:hover{
     .header{
         display: flex !important;
         width: 100%;
-        padding: 0;
+        padding: 10px;
     }
   
     #inp{
@@ -280,11 +302,11 @@ ul> li:hover{
         left: 400px;
     }
     
-    .card{
+    /* .card{
     
         width: 250px !important;
         margin: 0;
-    }
+    } */
    
 }
 
@@ -541,7 +563,7 @@ ul> li:hover{
       flex-wrap: wrap;
       
    }
-   .card{
+   /* .card{
       width: 300px !important;
       margin: 10px;
       
@@ -550,7 +572,7 @@ ul> li:hover{
       
       height: 200px !important;
       width: 300px;
-  }
+  } */
 
   .capture-2 , .capture-3{
       display: none;
