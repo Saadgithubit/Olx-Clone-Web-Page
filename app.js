@@ -1,4 +1,4 @@
-var logInBtn = document.getElementById('logIn-button')
+const logInBtn = document.getElementById('logIn-button')
 
 getData()
 
@@ -19,13 +19,19 @@ fetch('https://dummyjson.com/products')
     }
     const images = document.createElement('img')
     images.src = products[i].thumbnail
+    const line = document.createElement('br')
+    const price = document.createElement('h5')
+    price.innerHTML = 'Price: ' + products[i].price + '$'
     const title = document.createElement('h4')
     title.innerHTML = products[i].title
-    const price = document.createElement('h5')
-    price.innerHTML = products[i].price
+    const description = document.createElement('p')
+    description.innerHTML = products[i].description
     card.append(images)
-    card.append(title)
+    card.append(line)
+    card.append(line)
     card.append(price)
+    card.append(title)
+    card.append(description)
     container.append(card)
 
   }
@@ -34,23 +40,22 @@ fetch('https://dummyjson.com/products')
 
 
 const userData = JSON.parse(localStorage.getItem('users'))
-
-
-
+if(userData){
 for(var i=0; i < userData.length; i++){
   logInBtn.innerHTML = userData[i].fullName
   break
 }
+}
 
-// function changeLocation(){
-//   var logInBtn = document.getElementById('logIn-button')
+
+
+
+function changeLocation(){
   
-//   // logInBtn.addEventListener('click')
-//  console.log(logInBtn) 
-// //   var signUpPage = window.location.href = 'src/signin.html'
+  
+  window.location.href = './src/signin.html' 
 
-// //   window.location.href = signUpPage
-// }
+}
 
 
 

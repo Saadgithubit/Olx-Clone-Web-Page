@@ -31,3 +31,7 @@
 .span{
     color: rgb(8, 99, 134);
 }
+
+.hide{
+    display: none;
+}
