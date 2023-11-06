@@ -9,8 +9,8 @@ function signIn(){
     
 
     var found = false
-    for(var i = 0; i < users.length; i++){
-        if(users[i].email == email.value && users[i].password == password.value){
+    for(var i = 0; i < usersData.length; i++){
+        if(usersData[i].email == email.value && usersData[i].password == password.value){
             found = true
             alert('log in succesfull')
             window.location.href = '../index.html'
