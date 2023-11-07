@@ -1,4 +1,4 @@
-const usersData = JSON.parse(localStorage.getItem('users'))
+const usersData = JSON.parse(localStorage.getItem('users')) || []
 console.log(usersData)
 
 function signIn(){
@@ -15,14 +15,16 @@ function signIn(){
             found = true
             alert('log in succesfull')
             window.location.href = '../index.html'
+            sessionStorage.setItem('user' , JSON.stringify(usersData[i]))
             break
         }
 
         if(!found){
             alert('invalid email or password')
+            break
             
         }
-        if(usersData.length < 1){
+        if(usersData.length == 0){
             alert('Please Sign Up First')
             break
         }

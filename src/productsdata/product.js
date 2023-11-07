@@ -1,3 +1,6 @@
+getData()
+
+
 function getData (){
     const productId = window.location.search.split('=')[1]
    
@@ -8,13 +11,11 @@ function getData (){
         const products = res
 
 
-        console.log(products);
         const loader = document.getElementById('loader')
         loader.className = 'hide'
 
         const parentDiv = document.getElementById('products-details')
         const images = products.images
-        console.log(images);
         parentDiv.innerHTML = `
         <div id="carouselExampleIndicators" class="carousel slide">
   <div class="carousel-indicators">
@@ -47,8 +48,18 @@ function getData (){
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+<br>
         <h3><span class="span">Title: </span>${products.title}</h3>
         <h4><span class="span">Price: </span> ${products.price}</h4>
+        <div class="cart">
+    <div id="btn-div">
+    <button id="cart-btn" onclick="objAdd()" class="btn btn-dark">Add to cart</button>
+</div>
+<div class="cart-count">
+     <img src="https://cdn.pixabay.com/photo/2014/04/02/10/53/shopping-cart-304843_640.png" width="60px" onclick="goToCart()" id="cart-img" alt="">
+     <p id="cart-count-num">${productsData.length}</p>
+    </div>
+</div>
         <div class="description">
         <p><span class="span">Description: </span> ${products.description}</p>
     </div>`
@@ -56,11 +67,30 @@ function getData (){
 }
 
 
-getData()
+const productsData = JSON.parse(localStorage.getItem('products')) || []
+function objAdd(){
 
-// var firstName = "Saad"
-// var lastName = "Ahmed"
+  const productId = window.location.search.split('=')[1]
+   
+   fetch(`https://dummyjson.com/products/${productId}`)
+    .then(res => res.json())
+    .then(res => {
+        const products = res
 
-// var fullName = `My Name Is${firstName} ${lastName}`
+ productsData.push(products)
 
-// console.log(fullName)
+ localStorage.setItem('products' , JSON.stringify(productsData))
+
+ const countProducts = document.getElementById('cart-count-num')
+ countProducts.innerHTML = productsData.length
+
+ 
+
+
+
+    })
+}
+function goToCart (){
+window.location.href = '../cartdata/cart.html'
+}
+

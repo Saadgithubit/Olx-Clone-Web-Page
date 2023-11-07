@@ -116,6 +116,7 @@ fieldset{
     position: relative;
     right: 55px;
     bottom: 3px;
+
 }
 .search-bar{
     width: 50px;
@@ -211,6 +212,7 @@ ul> li:hover{
  .card-div p{
     width: 90%;
     font-weight: 500;
+    height: auto;
  }
  #allProducts h4, h5 , p{
     margin-left: 10px;
@@ -543,10 +545,20 @@ ul> li:hover{
     top: 65px;
     right: 15px;
  }
+ 
+ .search-bar{
+    height: 100%;
+ }
 
  #allProducts{
     justify-content: center;
   }
+
+  .card-div p{
+    width: 90% !important;
+    height: auto !important;
+    
+ }
 
   .capture> img{
       width: 100%;
@@ -692,7 +704,7 @@ ul> li:hover{
       width: 100%;
       height: 70px;
       font-size: 15px;
-      padding-left: 30 px;
+      padding-left: 30px;
       border-radius: 10px;
    }
 

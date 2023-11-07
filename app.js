@@ -1,4 +1,3 @@
-const logInBtn = document.getElementById('logIn-button')
 
 getData()
 
@@ -33,19 +32,15 @@ fetch('https://dummyjson.com/products')
     card.append(title)
     card.append(description)
     container.append(card)
-
+    
   }
 });
 }
 
+const user = JSON.parse(sessionStorage.getItem('user'))
+const logInBtn = document.getElementById('logIn-button')
+logInBtn.innerHTML = user.fullName
 
-const userData = JSON.parse(localStorage.getItem('users'))
-if(userData){
-for(var i=0; i < userData.length; i++){
-  logInBtn.innerHTML = userData[i].fullName
-  break
-}
-}
 
 
 
