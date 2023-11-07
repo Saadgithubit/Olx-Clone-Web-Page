@@ -43,9 +43,6 @@ fieldset{
     color: white;
 }
 
-/* ...............................signin page...................................... */
-
-
 /* ..................................Header.......................................... */
 .container-fluid{
     width: 100% !important;
@@ -211,6 +208,7 @@ ul> li:hover{
  .card-div p{
     width: 90%;
     font-weight: 500;
+     height: auto;
  }
  #allProducts h4, h5 , p{
     margin-left: 10px;
