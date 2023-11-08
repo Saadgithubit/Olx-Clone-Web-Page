@@ -153,6 +153,7 @@ ul> li:hover{
     border-radius: 20px;
     padding: 20px;
     transition: all 0.5s ease-in;
+    box-shadow: 10px 10px 20px gray;
 
  }
 
@@ -177,6 +178,15 @@ ul> li:hover{
  }
  #allProducts h4, h5 , p{
     margin-left: 10px;
+ }
+
+ #allProducts h4{
+    color: rgb(28, 136, 179);
+ }
+
+ #allProducts h5{
+    color: #FF6801;
+    
  }
 
  .h3{

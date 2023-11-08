@@ -40,6 +40,7 @@ fetch('https://dummyjson.com/products')
 const user = JSON.parse(sessionStorage.getItem('user'))
 const logInBtn = document.getElementById('logIn-button')
 logInBtn.innerHTML = user.fullName
+// logInBtn.className = ''  
 
 
 

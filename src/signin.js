@@ -24,7 +24,7 @@ function signIn(){
             break
             
         }
-        if(usersData.length == 0){
+        if(usersData.length == 0 ){
             alert('Please Sign Up First')
             break
         }
