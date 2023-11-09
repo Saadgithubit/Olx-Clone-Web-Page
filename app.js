@@ -39,10 +39,14 @@ fetch('https://dummyjson.com/products')
 
 const user = JSON.parse(sessionStorage.getItem('user'))
 const logInBtn = document.getElementById('logIn-button')
+if(user){
 logInBtn.innerHTML = user.fullName
-// logInBtn.className = ''  
+// logInBtn.className = ''
+}  
 
-
+function gotoPosts(e){
+    window.location.href = './src/AddsPosts/post.html'
+}
 
 
 
