@@ -1,16 +1,18 @@
-const usersData = JSON.parse(localStorage.getItem('users')) || []
+import { register } from "./config/firebase.js";
+// const usersData = JSON.parse(localStorage.getItem('users')) || []
 
-
-function signUp(){
+const signUpBtn = document.getElementById('signUp-btn')
+// console.log(signUpBtn);
+signUpBtn.addEventListener('click' , ()=>{
 
     const inputField = document.getElementsByTagName('input')
-    const name = inputField[0]
+    const fullName = inputField[0]
     const fatherName = inputField[1]
     const email = inputField[2]
     const password =inputField[3]
     const confirmPassword = inputField[4]
 
-    if(!name.value || !fatherName.value || !email.value || !password.value || !confirmPassword.value){
+    if(!fullName.value || !fatherName.value || !email.value || !password.value || !confirmPassword.value){
         alert('Please Fill All Fields')
         return
     }
@@ -20,7 +22,7 @@ function signUp(){
         return
     }
 
-    if(name.value.length < 3){
+    if(fullName.value.length < 3){
         alert('Please Enter Your Name with minimum 3 letters')
         return
     }
@@ -32,24 +34,26 @@ function signUp(){
 
     const user =
     {
-        fullName: name.value,
+        fullName: fullName.value,
         email: email.value,
         password: password.value
     }
 
-  usersData.push(user)
+    register(user)
 
-    localStorage.setItem('users' , JSON.stringify(usersData))
+    alert('Register Successfull')
+    window.location.href = 'signin.html'
 
 
 
-     window.location.href = 'signin.html'
+    //   usersData.push(user)
+//     localStorage.setItem('users' , JSON.stringify(usersData))
 //   console.log(name , fatherName , email , password , confirmPassword)
 
 
 
+})
 
-}
 
 // function signIn(){
 
