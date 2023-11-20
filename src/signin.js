@@ -15,8 +15,11 @@ signInBtn.addEventListener('click' , ()=>{
 
     logIn(user)
     
-    alert('Log in Successfull')
-    window.location.href = '../index.html'
+    // if(user){
+
+    //     alert('Log in Successfull')
+    //     window.location.href = '../index.html'
+    // }
     
 
     // var found = false

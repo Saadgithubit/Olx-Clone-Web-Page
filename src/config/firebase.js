@@ -1,5 +1,5 @@
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-app.js";
-import { getAuth , createUserWithEmailAndPassword, signInWithEmailAndPassword } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
+import { getAuth , createUserWithEmailAndPassword, signInWithEmailAndPassword ,  } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-auth.js";
 import { getFirestore ,  collection, addDoc } from "https://www.gstatic.com/firebasejs/10.6.0/firebase-firestore.js"
 
 const firebaseConfig = {
